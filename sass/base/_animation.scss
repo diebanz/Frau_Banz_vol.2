@@ -1,0 +1,11 @@
+@keyframes moveRightNav {
+    0% {
+        opacity: 0;
+        transform: translateX(-100rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
