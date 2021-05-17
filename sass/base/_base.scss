@@ -1,16 +1,19 @@
 // RESET
 
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 html {
-	font-size: 62.5%;
+    font-size: 62.5%;
 }
 
 body {
-	font-size: 1.6rem;
-	font-family: $second-font, sans-serif;
+    font-size: 1.6rem;
+    font-family: $second-font, sans-serif;
+    background-color: $color-primary-light;
+    line-height: 1.5;
+    color: #ccc;
 }

@@ -1,0 +1,38 @@
+.section__about {
+    background-color: $color-secondary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--text,
+    &--skills {
+        width: 50%;
+        padding: 5em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        line-height: 1.5;
+    }
+
+    &--heading {
+        text-align: center;
+        color: $color-secondary-light;
+        margin-bottom: 5rem;
+    }
+
+    &--icons {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.section__about--icons ion-icon {
+    font-size: 8rem;
+    margin-right: 3rem;
+    color: $color-tertiary;
+}
+
+.about__wave {
+    box-shadow: 0 1rem $color-secondary;
+}

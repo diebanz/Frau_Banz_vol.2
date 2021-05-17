@@ -2,9 +2,15 @@
     font-family: $default-font;
 
     &__1 {
+        font-size: 7rem;
+        font-family: $second-font;
+        letter-spacing: 1rem;
+        text-transform: uppercase;
     }
 
     &__2 {
+        font-size: 4.5rem;
+        line-height: 1.5;
     }
 
     &__3 {

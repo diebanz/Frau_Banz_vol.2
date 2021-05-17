@@ -32,34 +32,48 @@
             </nav>
             <div class="header__hero">
                 <div class="header__hero--imgs">
-                    <ion-icon
-                        name="logo-github"
-                        class="header__hero--icon"
-                    ></ion-icon>
-                    <img src="./IMG/user.jpg" alt="author potrait" />
+                    <a href="https://github.com/nataliabanz" target="_blank"
+                        ><ion-icon
+                            name="logo-github"
+                            class="header__hero--icon header__hero--github"
+                        ></ion-icon
+                    ></a>
+
+                    <div class="header__hero--pic"></div>
+
                     <ion-icon
                         name="download-outline"
-                        class="header__hero--icon"
+                        class="header__hero--icon header__hero--resume"
                     ></ion-icon>
                 </div>
                 <div class="header__hero--text">
-                    <h2 class="heading heading__2">
+                    <h2 class="heading heading__2 header__hero--part1">
                         <span class="header__span--pink">Hi</span>, my name is
                     </h2>
-                    <h1 class="heading heading__1">
+                    <h1 class="heading heading__1 header__hero--part2">
                         <span class="header__span--pink">Natalia Banz</span>
                     </h1>
-                    <h2 class="heading heading__2">and i am going to build</h2>
-                    <h2 class="heading heading__2">
+                    <h2 class="heading heading__2 header__hero--part3">
+                        and i am going to build
+                    </h2>
+                    <h2 class="heading heading__2 header__hero--part4">
                         you a <span class="header__span--blue">webpage</span>
                     </h2>
                 </div>
             </div>
         </header>
+        <img src="./IMG/header_wave.svg" alt="header wave" />
         <main>
+            <img
+                src="./IMG/about__top.svg"
+                alt="wave shape"
+                class="about__wave"
+            />
             <section class="section__about" id="about">
                 <div class="section__about--text">
-                    <h2 class="heading heading__2">... a bit more info</h2>
+                    <h2 class="heading heading__2 section__about--heading">
+                        ... a bit more info
+                    </h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing
                         elit. Qui sapiente iusto, aliquid nostrum fugit, cum
@@ -70,7 +84,9 @@
                     </p>
                 </div>
                 <div class="section__about--skills">
-                    <h2 class="heading heading__2">Skills</h2>
+                    <h2 class="heading heading__2 section__about--heading">
+                        Skills
+                    </h2>
                     <div class="section__about--icons">
                         <ion-icon name="logo-html5"></ion-icon>
                         <ion-icon name="logo-css3"></ion-icon>
@@ -82,6 +98,8 @@
                     </div>
                 </div>
             </section>
+            <img src="./IMG/about__down.svg" alt="wave shape" />
+
             <!-- end of about section -->
             <section class="section__projects" id="projects">
                 <h2 class="heading heading__2">Projects</h2>
