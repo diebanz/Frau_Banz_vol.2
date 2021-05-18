@@ -10,6 +10,9 @@
   0% {
     opacity: 0;
     transform: translateX(50rem); }
+  70% {
+    opacity: 1;
+    transform: translateX(-30rem); }
   100% {
     opacity: 1;
     transform: translateX(0); } }
@@ -36,7 +39,8 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: #abceda;
   line-height: 1.5;
-  color: #ccc; }
+  color: #ccc;
+  scroll-behavior: smooth; }
 
 .top__wave,
 .down__wave {
@@ -120,6 +124,131 @@ body {
   visibility: hidden;
   transform: translateY(-4rem); }
 
+.card {
+  grid-row: 2;
+  justify-content: center;
+  align-content: center;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 40rem; }
+  .card__side {
+    height: 40rem;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 3px;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    box-shadow: 1rem 1.5rem 1rem rgba(0, 18, 66, 0.3); }
+    .card__side--front {
+      background-color: #fff; }
+    .card__side--back {
+      transform: rotateY(180deg); }
+      .card__side--back--1 {
+        background-image: linear-gradient(to right bottom, #0b5351, #0b5351); }
+      .card__side--back--2 {
+        background-image: linear-gradient(to right bottom, #abceda, #8cbecf); }
+      .card__side--back--3 {
+        background-image: linear-gradient(to right bottom, #cb769e, #cb769e); }
+  .card:hover .card__side--front {
+    transform: rotateY(-180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0); }
+  .card__picture {
+    background-size: cover;
+    height: 30rem;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px; }
+    .card__picture--1 {
+      background-image: linear-gradient(to right bottom, #bcd0c7, #01302e), url(../img/nat-5.jpg); }
+    .card__picture--2 {
+      background-image: linear-gradient(to right bottom, #abceda, #8cbecf), url(../img/nat-6.jpg); }
+    .card__picture--3 {
+      background-image: linear-gradient(to right bottom, #cb769e, #cb769e), url(../img/nat-7.jpg); }
+  .card__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: #fff;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    width: 65%; }
+  .card__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decotation-break: clone;
+    box-decoration-break: clone; }
+    .card__heading-span--1 {
+      background-image: linear-gradient(to right bottom, rgba(188, 208, 199, 0.85), rgba(1, 48, 46, 0.85)); }
+    .card__heading-span--2 {
+      background-image: linear-gradient(to right bottom, rgba(171, 206, 218, 0.85), rgba(140, 190, 207, 0.85)); }
+    .card__heading-span--3 {
+      background-image: linear-gradient(to right bottom, rgba(203, 118, 158, 0.85), rgba(203, 118, 158, 0.85)); }
+  .card__details {
+    padding: 3rem; }
+    .card__details ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto; }
+      .card__details ul li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem; }
+        .card__details ul li:not(:last-child) {
+          border-bottom: 1px solid #eee; }
+  .card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+  .card__price-box {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 8rem; }
+  .card__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase; }
+  .card__price-value {
+    font-size: 6rem;
+    font-weight: 100; }
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+    .card {
+      height: auto;
+      border-radius: 3px;
+      background-color: #fff;
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+      .card__side {
+        height: auto;
+        position: relative;
+        box-shadow: none; }
+        .card__side--back {
+          transform: rotateY(0);
+          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%); }
+      .card:hover .card__side--front {
+        transform: rotateY(0); }
+      .card__details {
+        padding: 1rem 3rem; }
+      .card__cta {
+        position: relative;
+        top: 0%;
+        left: 0%;
+        transform: translate(0);
+        width: 100%;
+        padding: 7rem 4rem; }
+      .card__price-box {
+        margin-bottom: 3rem; }
+      .card__price-value {
+        font-size: 4rem; } }
+
 .section__about {
   background-color: #0b5351;
   display: flex;
@@ -189,6 +318,7 @@ body {
     color: #cb769e;
     border: 1px solid #cb769e;
     box-shadow: 0.3rem 0.3rem #cb769e;
+    border-radius: 1rem;
     transition: 0.1s; }
     .footer__icon:hover {
       box-shadow: inset 0.2rem 0.2rem 0.5rem rgba(203, 118, 158, 0.3);
@@ -201,7 +331,10 @@ body {
   display: flex;
   flex-direction: column;
   margin-top: 8rem;
-  box-shadow: 0 1rem #001242; }
+  padding: 5rem 0;
+  border-bottom: 0.2rem solid #cb769e;
+  box-shadow: 0 1rem #001242;
+  background-image: linear-gradient(105deg, #000f36 45% 47%, #001242 45%); }
   .header__hero {
     display: flex;
     justify-content: space-evenly;
@@ -214,9 +347,9 @@ body {
       justify-content: space-between;
       filter: drop-shadow(-8.5rem 2.9rem 0.7rem rgba(203, 118, 158, 0.11)) drop-shadow(-6.2rem 1.7rem 0.38rem rgba(203, 118, 158, 0.07)) drop-shadow(-4.1rem 1.1rem 0.3rem rgba(203, 118, 158, 0.06)) drop-shadow(-1.9rem 0px 0.2rem rgba(203, 118, 158, 0.05)); }
     .header__hero--pic {
-      width: 22rem;
-      height: 22rem;
-      background-image: linear-gradient(180deg, rgba(203, 118, 158, 0.5), rgba(0, 18, 66, 0.5)), url("../../IMG/author.jpg");
+      width: 25rem;
+      height: 25rem;
+      background-image: linear-gradient(180deg, rgba(203, 118, 158, 0.2), rgba(0, 18, 66, 0.2)), url("../../IMG/author.jpg");
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -226,20 +359,23 @@ body {
       margin: 5rem;
       width: 15rem;
       height: 10rem;
-      border-radius: 0.5rem; }
+      border-radius: 0.5rem;
+      box-shadow: inset 0.3rem -0.3rem 0.5rem rgba(171, 206, 218, 0.5), -0.1rem 0.1rem 0 #001242, -0.8rem 0.8rem 0 #0b5351;
+      transition: 0.1s; }
+      .header__hero--icon:hover {
+        box-shadow: inset 0.3rem -0.3rem 0.5rem rgba(171, 206, 218, 0.5), -0.1rem 0.1rem #001242;
+        transform: translate(-1px, 1px); }
     .header__hero--github {
       color: #001242;
-      background-color: #cb769e;
-      border: 1px solid #abceda; }
+      background-color: #cb769e; }
     .header__hero--resume {
       color: #001242;
-      background-color: #abceda;
-      border: 1px solid #cb769e; }
+      background-color: #abceda; }
     .header__hero--text {
       width: 50%;
       color: #bcd0c7;
-      padding-right: 2rem;
-      animation: moveLeft 0.8s 1 0.5s ease-in both; }
+      padding-right: 5rem;
+      animation: moveLeft 1s 1 0.5s ease-out both; }
     .header__hero--part2 {
       text-align: center; }
     .header__hero--part3 {
@@ -248,8 +384,8 @@ body {
       text-align: right; }
   .header__span--pink {
     color: #cb769e; }
-  .header__span--blue {
-    color: #8cbecf; }
+  .header__span--green {
+    color: #0b5351; }
 
 nav {
   width: 100%;
@@ -274,11 +410,16 @@ nav {
     padding: 2rem 4rem;
     font-weight: 700;
     text-transform: uppercase;
-    text-shadow: -0.2rem 0.2rem 0.1em transparent;
+    text-shadow: -0.2rem 0.2rem transparent;
     font-size: 2.5rem; }
     .nav__list--link:hover {
       color: #abceda;
       text-shadow: -0.2rem 0.2rem 0.1em #cb769e; }
 
 .section__projects {
-  background-color: #8cbecf; }
+  background-color: #8cbecf;
+  padding: 5rem; }
+  .section__projects--container {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(15rem, min-content));
+    gap: 5rem; }

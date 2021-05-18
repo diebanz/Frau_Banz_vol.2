@@ -29,6 +29,7 @@
         color: $color-tertiary;
         border: 1px solid $color-tertiary;
         box-shadow: 0.3rem 0.3rem $color-tertiary;
+        border-radius: 1rem;
         transition: 0.1s;
 
         &:hover {
