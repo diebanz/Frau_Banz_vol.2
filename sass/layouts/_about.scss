@@ -3,36 +3,43 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 1rem $color-secondary;
 
     &--text,
     &--skills {
-        width: 50%;
-        padding: 5em;
+        width: 40%;
+        padding: 0 2rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        line-height: 1.5;
     }
 
     &--heading {
         text-align: center;
         color: $color-secondary-light;
         margin-bottom: 5rem;
+        text-transform: uppercase;
     }
 
     &--icons {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    &--text {
+        p {
+            text-indent: 5rem;
+            margin: 1rem 0;
+        }
     }
 }
 
-.section__about--icons ion-icon {
+.section__about--icons ion-icon,
+.section__about--icons i {
     font-size: 8rem;
-    margin-right: 3rem;
+    margin: 3rem;
     color: $color-tertiary;
-}
-
-.about__wave {
-    box-shadow: 0 1rem $color-secondary;
 }

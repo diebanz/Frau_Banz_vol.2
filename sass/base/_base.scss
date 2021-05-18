@@ -11,9 +11,19 @@ html {
 }
 
 body {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-family: $second-font, sans-serif;
     background-color: $color-primary-light;
     line-height: 1.5;
     color: #ccc;
+}
+
+.top__wave,
+.down__wave {
+    display: block;
+    width: 100%;
+}
+
+.down__wave {
+    margin-bottom: 8rem;
 }

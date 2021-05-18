@@ -1,3 +1,11 @@
 a {
     text-decoration: none;
+    font-size: 2rem;
+}
+
+.breaking__line {
+    width: 0.2rem;
+    height: 50rem;
+    margin: 0 10rem;
+    background-color: $color-primary-light;
 }

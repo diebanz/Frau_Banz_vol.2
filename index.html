@@ -4,6 +4,12 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+            integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+            crossorigin="anonymous"
+        />
         <link rel="stylesheet" href="css/normalizer.css" />
         <link rel="stylesheet" href="./css/style.css" />
         <link
@@ -62,12 +68,17 @@
                 </div>
             </div>
         </header>
-        <img src="./IMG/header_wave.svg" alt="header wave" />
+
         <main>
+            <img
+                src="./IMG/header_wave1.svg"
+                alt="header wave"
+                class="down__wave header__wave"
+            />
             <img
                 src="./IMG/about__top.svg"
                 alt="wave shape"
-                class="about__wave"
+                class="top__wave"
             />
             <section class="section__about" id="about">
                 <div class="section__about--text">
@@ -75,14 +86,29 @@
                         ... a bit more info
                     </h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Qui sapiente iusto, aliquid nostrum fugit, cum
-                        molestias unde velit, totam alias necessitatibus
-                        distinctio nihil eaque soluta vel et accusamus quibusdam
-                        minus quo. Quasi laboriosam consectetur eius voluptate
-                        quas? Reiciendis, qui molestiae.
+                        One more time! My name is Natalia, and I am working to
+                        become a professional front-end developer.
+                    </p>
+                    <p>
+                        I can tell that my interest in web development was
+                        always there. As a teenager I was very much into
+                        building simple blog layouts and created a webpage about
+                        the Final Fantasy game series together with my brother.
+                        But my approach to programming had a big breakthrough in
+                        2020.
+                    </p>
+                    <p>
+                        I am self-taught and spent a year on educating myself in
+                        programming: Udemy courses, Books and working on my own
+                        projects, my focus was mostly on the front-end. By the
+                        end of 2020 I decided to fasten my knowledge and fill
+                        possible lacks in it by finding myself a professional
+                        place to study at. Currently I am attending a 14-month
+                        web development course at the Digital Career Institute
+                        (DCI).
                     </p>
                 </div>
+                <div class="breaking__line"></div>
                 <div class="section__about--skills">
                     <h2 class="heading heading__2 section__about--heading">
                         Skills
@@ -91,6 +117,7 @@
                         <ion-icon name="logo-html5"></ion-icon>
                         <ion-icon name="logo-css3"></ion-icon>
                         <ion-icon name="logo-sass"></ion-icon>
+                        <i class="fab fa-bootstrap"></i>
                         <ion-icon name="git-branch-outline"></ion-icon>
                         <ion-icon name="logo-npm"></ion-icon>
                         <ion-icon name="logo-javascript"></ion-icon>
@@ -98,9 +125,19 @@
                     </div>
                 </div>
             </section>
-            <img src="./IMG/about__down.svg" alt="wave shape" />
 
+            <img
+                src="./IMG/about__down.svg"
+                alt="wave shape"
+                class="down__wave"
+            />
             <!-- end of about section -->
+
+            <img
+                src="./IMG/project__top.svg"
+                alt="wave shape"
+                class="top__wave"
+            />
             <section class="section__projects" id="projects">
                 <h2 class="heading heading__2">Projects</h2>
                 <div class="section__projects--container">
@@ -118,7 +155,18 @@
                     </div>
                 </div>
             </section>
+            <img
+                src="./IMG/project__down.svg"
+                alt="wave shape"
+                class="down__wave"
+            />
             <!-- end of projects' section -->
+
+            <img
+                src="./IMG/contact__top.svg"
+                alt="wave shape"
+                class="top__wave"
+            />
             <section class="section__contact" id="contact">
                 <h2 class="heading heading__2">Let's get in touch!</h2>
                 <form action="#">
@@ -154,19 +202,36 @@
                         Send it!
                     </button>
                 </form>
+                <img
+                    src="./IMG/footer.svg"
+                    alt="wave shape"
+                    class="top__wave"
+                />
             </section>
             <!-- end of contact section  -->
         </main>
-        <footer id="footer">
-            <h4 class="heading heading__4">
+        <footer id="footer" class="footer">
+            <div class="footer__box">
+                <ion-icon name="logo-github" class="footer__icon"
+                    ><a
+                        href="https://github.com/nataliabanz"
+                        target="_blank"
+                    ></a
+                ></ion-icon>
+                <ion-icon name="logo-linkedin" class="footer__icon"
+                    ><a
+                        href="https://www.linkedin.com/in/natalia-banz-60abb1206/"
+                        target="_blank"
+                    ></a
+                ></ion-icon>
+            </div>
+            <h4 class="heading heading__4 footer__heading">
                 Designed & Built by
                 <a href="https://github.com/nataliabanz" class="footer__link"
                     >Natalia Banz</a
                 >
                 | 2021
             </h4>
-            <ion-icon name="logo-github" class="footer__icon"></ion-icon>
-            <ion-icon name="logo-linkedin" class="footer__icon"></ion-icon>
         </footer>
 
         <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>

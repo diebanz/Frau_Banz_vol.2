@@ -15,7 +15,14 @@
     transform: translateX(0); } }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  font-size: 2rem; }
+
+.breaking__line {
+  width: 0.2rem;
+  height: 50rem;
+  margin: 0 10rem;
+  background-color: #abceda; }
 
 * {
   padding: 0;
@@ -26,11 +33,19 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-family: "Poppins", sans-serif;
   background-color: #abceda;
   line-height: 1.5;
   color: #ccc; }
+
+.top__wave,
+.down__wave {
+  display: block;
+  width: 100%; }
+
+.down__wave {
+  margin-bottom: 8rem; }
 
 .heading {
   font-family: "Spartan"; }
@@ -46,40 +61,83 @@ body {
     font-weight: 700;
     font-size: 2.5rem; }
 
+form {
+  padding: 5rem;
+  margin-bottom: 5rem; }
+
 .section__about {
   background-color: #0b5351;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  box-shadow: 0 1rem #0b5351; }
   .section__about--text, .section__about--skills {
-    width: 50%;
-    padding: 5em;
+    width: 40%;
+    padding: 0 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    line-height: 1.5; }
+    justify-content: center; }
   .section__about--heading {
     text-align: center;
     color: #bcd0c7;
-    margin-bottom: 5rem; }
+    margin-bottom: 5rem;
+    text-transform: uppercase; }
   .section__about--icons {
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start; }
+  .section__about--text p {
+    text-indent: 5rem;
+    margin: 1rem 0; }
 
-.section__about--icons ion-icon {
+.section__about--icons ion-icon,
+.section__about--icons i {
   font-size: 8rem;
-  margin-right: 3rem;
+  margin: 3rem;
   color: #cb769e; }
 
-.about__wave {
-  box-shadow: 0 1rem #0b5351; }
+.section__contact {
+  background-color: #cb769e; }
+
+.contact__wave {
+  display: block;
+  width: 100%; }
+
+.footer {
+  background-color: #001242;
+  padding: 2rem;
+  position: relative; }
+  .footer__link {
+    color: #cb769e; }
+    .footer__link:hover {
+      color: #0b5351; }
+  .footer__heading {
+    width: 30%;
+    margin: 0 auto; }
+  .footer__box {
+    position: absolute;
+    bottom: 0.2rem;
+    right: 0.5rem;
+    padding: 1rem; }
+  .footer__icon {
+    font-size: 8rem;
+    margin-right: 3rem;
+    color: #cb769e;
+    border: 1px solid #cb769e;
+    box-shadow: 0.2rem 0.2rem 0.5rem #cb769e; }
+    .footer__icon:hover {
+      color: #0b5351;
+      border: 1px solid #0b5351;
+      box-shadow: 0.2rem 0.2rem 0.5rem #bcd0c7; }
 
 .header {
   background-color: #001242;
   display: flex;
   flex-direction: column;
-  margin-top: 8rem; }
+  margin-top: 8rem;
+  box-shadow: 0 1rem #001242; }
   .header__hero {
     display: flex;
     justify-content: space-evenly;
@@ -149,7 +207,6 @@ nav {
   list-style: none; }
   .nav__list--link {
     color: #bcd0c7;
-    font-size: 2rem;
     padding: 2rem 4rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -157,3 +214,6 @@ nav {
     .nav__list--link:hover {
       color: #abceda;
       text-shadow: -0.2rem 0.2rem 0.1em #cb769e; }
+
+.section__projects {
+  background-color: #8cbecf; }

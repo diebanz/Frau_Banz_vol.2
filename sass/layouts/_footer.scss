@@ -1,0 +1,39 @@
+.footer {
+    background-color: $color-primary;
+    padding: 2rem;
+    position: relative;
+
+    &__link {
+        color: $color-tertiary;
+
+        &:hover {
+            color: $color-secondary;
+        }
+    }
+
+    &__heading {
+        width: 30%;
+        margin: 0 auto;
+    }
+
+    &__box {
+        position: absolute;
+        bottom: 0.2rem;
+        right: 0.5rem;
+        padding: 1rem;
+    }
+
+    &__icon {
+        font-size: 8rem;
+        margin-right: 3rem;
+        color: $color-tertiary;
+        border: 1px solid $color-tertiary;
+        box-shadow: 0.2rem 0.2rem 0.5rem $color-tertiary;
+
+        &:hover {
+            color: $color-secondary;
+            border: 1px solid $color-secondary;
+            box-shadow: 0.2rem 0.2rem 0.5rem $color-secondary-light;
+        }
+    }
+}
