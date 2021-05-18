@@ -15,8 +15,7 @@
     transform: translateX(0); } }
 
 a {
-  text-decoration: none;
-  font-size: 2rem; }
+  text-decoration: none; }
 
 .breaking__line {
   width: 0.2rem;
@@ -50,20 +49,76 @@ body {
 .heading {
   font-family: "Spartan"; }
   .heading__1 {
-    font-size: 7rem;
+    font-size: 6rem;
     font-family: "Poppins";
     letter-spacing: 1rem;
     text-transform: uppercase; }
   .heading__2 {
-    font-size: 4.5rem;
+    font-size: 4rem;
     line-height: 1.5; }
   .heading__3 {
     font-weight: 700;
-    font-size: 2.5rem; }
+    font-size: 3rem; }
+  .heading__4 {
+    font-size: 2rem; }
 
-form {
+.btn {
+  display: block;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 1rem; }
+
+.form__button {
+  color: #bcd0c7;
+  margin: 0 auto;
+  width: 20rem;
+  height: 7rem;
+  font-weight: 700;
+  background: #0b5351;
+  box-shadow: 0.5rem 0.5rem #001242;
+  transition: 0.1s; }
+  .form__button:hover {
+    box-shadow: inset 0.2rem 0.2rem 0.5rem rgba(188, 208, 199, 0.5), inset -0.2rem -0.2rem 0.5rem #01302e;
+    transform: translate(1px, 1px); }
+
+.form {
   padding: 5rem;
-  margin-bottom: 5rem; }
+  width: 70%;
+  margin: 0 auto; }
+  .form__name, .form__email, .form__message, .form__btn {
+    width: 100%;
+    margin-bottom: 3rem; }
+  .form__input {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: #abceda;
+    color: #333; }
+    .form__input:focus {
+      box-shadow: 0.5rem 0.5rem #001242;
+      outline: none; }
+    .form__input:invalid {
+      border-bottom: 2px solid #c51e1e; }
+    .form__input::placeholder, .form__input::-moz-placeholder {
+      color: #001242; }
+  .form__label {
+    display: block;
+    margin-left: 10.5rem;
+    margin-top: 1rem;
+    transition: all 0.3s;
+    color: #001242; }
+  .form textarea {
+    resize: none;
+    height: 20rem; }
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem); }
 
 .section__about {
   background-color: #0b5351;
@@ -100,6 +155,13 @@ form {
 
 .section__contact {
   background-color: #cb769e; }
+  .section__contact--heading {
+    color: #001242; }
+  .section__contact--container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; }
 
 .contact__wave {
   display: block;
@@ -112,7 +174,7 @@ form {
   .footer__link {
     color: #cb769e; }
     .footer__link:hover {
-      color: #0b5351; }
+      color: #8cbecf; }
   .footer__heading {
     width: 30%;
     margin: 0 auto; }
@@ -126,11 +188,13 @@ form {
     margin-right: 3rem;
     color: #cb769e;
     border: 1px solid #cb769e;
-    box-shadow: 0.2rem 0.2rem 0.5rem #cb769e; }
+    box-shadow: 0.3rem 0.3rem #cb769e;
+    transition: 0.1s; }
     .footer__icon:hover {
-      color: #0b5351;
-      border: 1px solid #0b5351;
-      box-shadow: 0.2rem 0.2rem 0.5rem #bcd0c7; }
+      box-shadow: inset 0.2rem 0.2rem 0.5rem rgba(203, 118, 158, 0.3);
+      color: #abceda;
+      transform: translate(1px, 1px);
+      border: 1px solid #abceda; }
 
 .header {
   background-color: #001242;
@@ -189,7 +253,7 @@ form {
 
 nav {
   width: 100%;
-  padding: 2.2rem;
+  padding: 2rem;
   background-color: #000f36;
   color: #bcd0c7;
   display: flex;
@@ -210,7 +274,8 @@ nav {
     padding: 2rem 4rem;
     font-weight: 700;
     text-transform: uppercase;
-    text-shadow: -0.2rem 0.2rem 0.1em transparent; }
+    text-shadow: -0.2rem 0.2rem 0.1em transparent;
+    font-size: 2.5rem; }
     .nav__list--link:hover {
       color: #abceda;
       text-shadow: -0.2rem 0.2rem 0.1em #cb769e; }
