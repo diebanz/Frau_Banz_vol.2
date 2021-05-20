@@ -1,6 +1,7 @@
 .section__contact {
     background-color: $color-tertiary;
-    box-shadow: 0 1rem $color-tertiary, 0 -1rem $color-tertiary &--heading {
+    box-shadow: 0 1rem $color-tertiary, 0 -1rem $color-tertiary;
+    &--heading {
         color: $color-primary;
     }
 

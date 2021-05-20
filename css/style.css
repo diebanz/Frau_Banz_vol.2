@@ -342,8 +342,9 @@ body {
 
 .section__contact {
   background-color: #cb769e;
-  box-shadow: 0 1rem #cb769e, 0 -1rem #cb769e .section__contact --heading;
-    box-shadow-color: #001242; }
+  box-shadow: 0 1rem #cb769e, 0 -1rem #cb769e; }
+  .section__contact--heading {
+    color: #001242; }
   .section__contact--container {
     width: 80%;
     margin: 0 auto;
@@ -370,6 +371,7 @@ body {
 
 .footer {
   background-color: #001242;
+  box-shadow: 0 1rem #001242, 0 -1rem #001242;
   padding: 2rem;
   position: relative; }
   .footer__link {
@@ -585,9 +587,9 @@ body {
 
 @media only screen and (max-width: 576px) {
   .navi__logo {
-    margin-left: 0.5rem;
-    padding: 1rem 2rem;
-    font-size: 1.5rem; }
+    margin-left: 0;
+    padding: 1rem;
+    font-size: 1.3rem; }
   .navi__list {
     margin-right: 0.5rem; }
     .navi__list--link {
