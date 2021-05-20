@@ -148,3 +148,15 @@
         }
     }
 }
+
+@media only screen and (max-width: 576px) {
+    .header {
+        &__hero {
+            &--icon {
+                width: 10rem;
+                height: 5rem;
+                margin: 5rem 2rem;
+            }
+        }
+    }
+}

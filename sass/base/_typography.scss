@@ -14,8 +14,7 @@
     }
 
     &__3 {
-        font-weight: 700;
-        font-size: 2.5rem;
+        font-size: 2rem;
         text-align: center;
     }
 
@@ -45,8 +44,10 @@
     }
 }
 
-
 @media only screen and (max-width: 768px) {
-    
-   
+    .heading {
+        &__3 {
+            font-size: 1.5rem;
+        }
+    }
 }
