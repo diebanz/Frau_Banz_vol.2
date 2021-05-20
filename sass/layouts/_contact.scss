@@ -1,7 +1,6 @@
 .section__contact {
     background-color: $color-tertiary;
-
-    &--heading {
+    box-shadow: 0 1rem $color-tertiary, 0 -1rem $color-tertiary &--heading {
         color: $color-primary;
     }
 
@@ -11,9 +10,17 @@
         display: flex;
         justify-content: space-between;
     }
+
+    &--heading {
+        color: $color-primary;
+    }
 }
 
-.contact__wave {
-    display: block;
-    width: 100%;
+@media only screen and (max-width: 992px) {
+    .section__contact {
+        &--container {
+            width: 90%;
+            padding: 2rem;
+        }
+    }
 }

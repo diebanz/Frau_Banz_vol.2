@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 1rem $color-secondary;
+    box-shadow: 0 1rem $color-secondary, 0 -1rem $color-secondary;
 
     &--text,
     &--skills {
@@ -19,7 +19,6 @@
         text-align: center;
         color: $color-secondary-light;
         margin-bottom: 5rem;
-        text-transform: uppercase;
     }
 
     &--icons {
@@ -37,9 +36,54 @@
     }
 }
 
+.about__span {
+    &--pink {
+        color: $color-tertiary-light;
+    }
+}
+
 .section__about--icons ion-icon,
 .section__about--icons i {
-    font-size: 8rem;
+    font-size: 12rem;
     margin: 3rem;
-    color: $color-tertiary;
+    color: $color-tertiary-light;
+}
+
+@media only screen and (max-width: 992px) {
+    .section__about {
+        &--text,
+        &--skills {
+            width: 50%;
+        }
+
+        &--heading {
+            margin-bottom: 3rem;
+        }
+    }
+
+    .section__about--icons ion-icon,
+    .section__about--icons i {
+        font-size: 10rem;
+        margin: 3rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .section__about {
+        padding: 2rem 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 1rem $color-secondary, 0 -1rem $color-secondary;
+
+        &--text,
+        &--skills {
+            width: 90%;
+        }
+    }
+
+    .section__about--icons ion-icon,
+    .section__about--icons i {
+        font-size: 10rem;
+    }
 }

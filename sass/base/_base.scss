@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-family: $second-font, sans-serif;
     background-color: $color-primary-light;
     line-height: 1.5;
@@ -19,12 +19,13 @@ body {
     scroll-behavior: smooth;
 }
 
-.top__wave,
-.down__wave {
+.top__wave {
     display: block;
     width: 100%;
 }
 
 .down__wave {
+    display: block;
+    width: 100%;
     margin-bottom: 8rem;
 }

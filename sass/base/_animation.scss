@@ -1,7 +1,12 @@
-@keyframes moveRightNav {
+@keyframes moveRight {
     0% {
         opacity: 0;
         transform: translateX(-100rem);
+    }
+
+    70% {
+        opacity: 1;
+        transform: translateX(10rem);
     }
 
     100% {
@@ -18,11 +23,21 @@
 
     70% {
         opacity: 1;
-        transform: translateX(-30rem);
+        transform: translateX(-10rem);
     }
 
     100% {
         opacity: 1;
         transform: translateX(0);
+    }
+}
+
+@keyframes backgrCards {
+    0% {
+        background-position: left;
+    }
+
+    100% {
+        background-position: right;
     }
 }

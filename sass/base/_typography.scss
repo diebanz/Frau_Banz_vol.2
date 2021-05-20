@@ -15,10 +15,38 @@
 
     &__3 {
         font-weight: 700;
-        font-size: 3rem;
+        font-size: 2.5rem;
+        text-align: center;
     }
 
     &__4 {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        text-align: center;
     }
+}
+
+@media only screen and (max-width: 992px) {
+    .heading {
+        &__1 {
+            font-size: 5rem;
+        }
+
+        &__2 {
+            font-size: 3rem;
+        }
+
+        &__3 {
+            font-size: 2rem;
+        }
+
+        &__4 {
+            font-size: 1.6rem;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    
+   
 }

@@ -1,34 +1,85 @@
-nav {
+.navi {
     width: 100%;
-    padding: 2rem;
+    padding: 1.5rem;
     background-color: $color-nav;
     color: $color-secondary-light;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid $color-tertiary;
+    border-bottom: 1px solid $color-tertiary;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 10;
-}
 
-.nav__list {
-    display: flex;
-    margin-right: 2rem;
-    list-style: none;
-
-    &--link {
-        color: $color-secondary-light;
-        padding: 2rem 4rem;
-        font-weight: 700;
-        text-transform: uppercase;
-        text-shadow: -0.2rem 0.2rem transparent;
+    &__logo {
+        color: $color-tertiary;
+        margin-left: 2rem;
+        padding: 1rem 2rem;
         font-size: 2.5rem;
 
         &:hover {
             color: $color-primary-light;
-            text-shadow: -0.2rem 0.2rem 0.1em $color-tertiary;
+            border-radius: 2rem;
+            background: #001242;
+            box-shadow: inset 5px 5px 0 #05153f, inset -2px -2px 0 #2e4174;
+        }
+    }
+
+    &__list {
+        display: flex;
+        margin-right: 2rem;
+        list-style: none;
+
+        &--link {
+            color: $color-secondary-light;
+            padding: 1rem 4rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 2rem;
+            border-radius: 1rem;
+
+            &:hover {
+                color: $color-tertiary;
+                background: #001242;
+                box-shadow: inset 5px 5px 0 #05153f, inset -2px -2px 0 #2e4174;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .navi {
+        padding: 1rem;
+
+        &__logo {
+            font-size: 2rem;
+        }
+
+        &__list {
+            margin-right: 1rem;
+
+            &--link {
+                font-size: 1.7rem;
+                padding: 1rem 3rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navi {
+        &__logo {
+            font-size: 1.5rem;
+        }
+
+        &__list {
+            margin-right: 0.3rem;
+
+            &--link {
+                font-size: 1.5rem;
+                padding: 1rem 2rem;
+            }
         }
     }
 }
