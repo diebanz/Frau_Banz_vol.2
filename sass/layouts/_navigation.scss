@@ -86,6 +86,9 @@
 
 @media only screen and (max-width: 576px) {
     .navi {
+        padding: 0.3rem 0;
+        justify-content: center;
+
         &__logo {
             margin-left: 0;
             padding: 1rem;
@@ -97,7 +100,7 @@
 
             &--link {
                 font-size: 1rem;
-                padding: 1rem 1.5rem;
+                padding: 1rem;
             }
         }
     }

@@ -151,11 +151,12 @@
 
 @media only screen and (max-width: 576px) {
     .header {
+        margin-top: 4.5rem;
         &__hero {
             &--icon {
-                width: 10rem;
+                width: 8rem;
                 height: 5rem;
-                margin: 5rem 2rem;
+                margin: 5rem 1rem;
             }
         }
     }

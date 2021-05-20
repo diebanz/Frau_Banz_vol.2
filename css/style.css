@@ -521,10 +521,12 @@ body {
         padding-right: 1rem; } }
 
 @media only screen and (max-width: 576px) {
-  .header__hero--icon {
-    width: 10rem;
-    height: 5rem;
-    margin: 5rem 2rem; } }
+  .header {
+    margin-top: 4.5rem; }
+    .header__hero--icon {
+      width: 8rem;
+      height: 5rem;
+      margin: 5rem 1rem; } }
 
 .navi {
   width: 100%;
@@ -586,15 +588,18 @@ body {
       padding: 1rem 2rem; } }
 
 @media only screen and (max-width: 576px) {
-  .navi__logo {
-    margin-left: 0;
-    padding: 1rem;
-    font-size: 1.3rem; }
-  .navi__list {
-    margin-right: 0.5rem; }
-    .navi__list--link {
-      font-size: 1rem;
-      padding: 1rem 1.5rem; } }
+  .navi {
+    padding: 0.3rem 0;
+    justify-content: center; }
+    .navi__logo {
+      margin-left: 0;
+      padding: 1rem;
+      font-size: 1.3rem; }
+    .navi__list {
+      margin-right: 0.5rem; }
+      .navi__list--link {
+        font-size: 1rem;
+        padding: 1rem; } }
 
 .section__projects {
   background-color: #8cbecf;
