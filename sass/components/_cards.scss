@@ -1,5 +1,5 @@
 .card {
-    width: 45rem;
+    width: 90%;
     height: 55rem;
     padding: 1rem;
     border-radius: 0.5rem;
@@ -18,7 +18,7 @@
             top: 10%;
             left: 9.5%;
             z-index: 1;
-            border-radius: 2rem;
+            border-radius: 0.5rem;
         }
 
         &::after {
@@ -28,7 +28,7 @@
             position: absolute;
             top: 23rem;
             left: 20%;
-            border-radius: 2rem;
+            border-radius: 0.5rem;
             font-size: 2.5rem;
             background: $color-primary-dark;
             z-index: 5;
@@ -44,7 +44,7 @@
             position: absolute;
             top: 10%;
             left: 9.5%;
-            border-radius: 2rem;
+            border-radius: 0.5rem;
         }
     }
 
@@ -97,7 +97,7 @@
         position: absolute;
         top: 5%;
         left: 7%;
-        border-radius: 2rem;
+        border-radius: 0.5rem;
 
         display: flex;
         flex-direction: column;
@@ -134,7 +134,7 @@
         padding: 1rem;
 
         font-size: 1.8rem;
-        border-radius: 2rem;
+        border-radius: 0.5rem;
         background: linear-gradient(145deg, #b7dce9, #9ab9c4);
         box-shadow: 2px 2px 2px #87a3ac, -2px -2px 2px #cff9ff;
         transition: box-shadow 0.8s ease-in-out;
@@ -143,5 +143,17 @@
             background: #abceda;
             box-shadow: inset 2px 2px 2px #87a3ac, inset -2px -2px 2px #cff9ff;
         }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .section__projects {
+        padding: 3rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .card {
+        width: 100%;
     }
 }
