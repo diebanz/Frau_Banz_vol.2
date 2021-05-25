@@ -61,7 +61,8 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: #abceda;
   line-height: 1.5;
-  color: #ccc; }
+  color: #ccc;
+  overflow-x: hidden; }
 
 .top__wave {
   display: block;
@@ -630,7 +631,7 @@ body {
     .navigation__checkbox {
       display: none; }
     .navigation__button {
-      background-color: #001242;
+      background-color: transparent;
       height: 6.5rem;
       width: 6.5rem;
       position: fixed;
@@ -638,14 +639,17 @@ body {
       left: 0.5rem;
       border-radius: 0.5rem;
       z-index: 20;
-      box-shadow: inset 5px 5px 5px #020d29, inset -2px -2px 5px #314882;
+      box-shadow: inset 5px 5px 5px #282e3b, inset -2px -2px 5px #7c87a1;
       text-align: center;
       cursor: pointer; }
     .navigation__background {
       height: 6rem;
       width: 6rem;
       border-radius: 2rem;
-      background-image: radial-gradient(#ffa6d0, #001242);
+      background-image: radial-gradient(transparent, transparent);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      -moz-backdrop-filter: blur(5px);
       position: fixed;
       top: 1rem;
       left: 1rem;
@@ -677,7 +681,7 @@ body {
       font-size: 3rem;
       font-weight: 300;
       padding: 1rem 2rem;
-      color: #001242;
+      color: #fff;
       background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #001242 50%);
       background-size: 250%;
       transition: all 0.4s; }
@@ -691,8 +695,8 @@ body {
       opacity: 1;
       width: 100%; }
     .navigation__checkbox:checked ~ .navigation__button {
-      background-color: #ffa6d0;
-      box-shadow: inset 5px 5px 5px #8f5871, inset -2px -2px 5px #ffc4e0; }
+      background-color: transparent;
+      box-shadow: inset 5px 5px 5px #6d5a62, inset -2px -2px 5px #eecbdb; }
     .navigation__icon {
       position: relative;
       margin-top: 3rem; }
