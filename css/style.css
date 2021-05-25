@@ -72,6 +72,9 @@ body {
   display: block;
   width: 101%; }
 
+.down__wave {
+  box-shadow: 5px 0 0 #abceda; }
+
 .heading {
   font-family: "Spartan"; }
   .heading__1 {
@@ -286,7 +289,8 @@ body {
     border-radius: 0.5rem; } }
 
 #about {
-  background-color: #0b5351; }
+  background-color: #0b5351;
+  box-shadow: 5px 0 0 #abceda; }
 
 .section__about {
   display: flex;
@@ -443,7 +447,8 @@ body {
   display: flex;
   flex-direction: column;
   margin-top: 5.5rem;
-  padding-top: 5rem; }
+  padding-top: 5rem;
+  box-shadow: 5px 0 0 #abceda; }
   .header__hero {
     width: 90%;
     display: flex;
@@ -500,7 +505,6 @@ body {
 @media only screen and (max-width: 992px) {
   .header__hero {
     width: 100%;
-    display: flex;
     justify-content: center;
     align-items: center; }
     .header__hero--imgs {
@@ -514,13 +518,14 @@ body {
   .header {
     padding-top: 5rem; }
     .header__hero {
+      margin: 0 auto;
       width: 90%;
-      flex-direction: column; }
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
       .header__hero--imgs {
         width: 100%;
-        margin-bottom: 10rem;
-        align-items: center;
-        justify-content: center; }
+        margin-bottom: 10rem; }
       .header__hero--pic {
         width: 24rem;
         height: 24rem; }
@@ -537,7 +542,8 @@ body {
     .header__hero {
       width: 100%; }
       .header__hero--imgs {
-        width: 80%; }
+        width: 80%;
+        margin-bottom: 5rem; }
       .header__hero--pic {
         width: 20rem;
         height: 20rem; } }
@@ -548,7 +554,9 @@ body {
     .header__hero {
       width: 100%; }
       .header__hero--imgs {
-        width: 80%; } }
+        width: 80%; }
+      .header__hero--text {
+        margin-bottom: 2rem; } }
 
 .navigation {
   display: none; }
@@ -640,7 +648,7 @@ body {
       height: 6rem;
       width: 6rem;
       border-radius: 0.5rem;
-      background-image: radial-gradient(transparent, transparent);
+      background-image: radial-gradient(#cb769e, transparent);
       backdrop-filter: blur(1rem);
       -webkit-backdrop-filter: blur(1rem);
       -moz-backdrop-filter: blur(1rem);
@@ -722,7 +730,8 @@ body {
       transform: rotate(-135deg); } }
 
 .section__projects {
-  background-color: #8cbecf; }
+  background-color: #8cbecf;
+  box-shadow: 5px 0 0 #abceda; }
   .section__projects--container {
     padding: 5rem 0;
     display: grid;

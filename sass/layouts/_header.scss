@@ -4,6 +4,7 @@
 	flex-direction: column;
 	margin-top: 5.5rem;
 	padding-top: 5rem;
+	box-shadow: 5px 0 0 $color-primary-light;
 
 	&__hero {
 		width: 90%;
@@ -98,7 +99,6 @@
 @media only screen and (max-width: 992px) {
 	.header__hero {
 		width: 100%;
-		display: flex;
 		justify-content: center;
 		align-items: center;
 
@@ -119,14 +119,15 @@
 		padding-top: 5rem;
 
 		&__hero {
+			margin: 0 auto;
 			width: 90%;
 			flex-direction: column;
+			align-items: center;
+			justify-content: center;
 
 			&--imgs {
 				width: 100%;
 				margin-bottom: 10rem;
-				align-items: center;
-				justify-content: center;
 			}
 
 			&--pic {
@@ -156,6 +157,7 @@
 
 			&--imgs {
 				width: 80%;
+				margin-bottom: 5rem;
 			}
 
 			&--pic {
@@ -175,6 +177,10 @@
 
 			&--imgs {
 				width: 80%;
+			}
+
+			&--text {
+				margin-bottom: 2rem;
 			}
 		}
 	}

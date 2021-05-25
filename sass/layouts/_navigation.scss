@@ -126,7 +126,7 @@
 			height: 6rem;
 			width: 6rem;
 			border-radius: 0.5rem;
-			background-image: radial-gradient(transparent, transparent);
+			background-image: radial-gradient($color-tertiary, transparent);
 			backdrop-filter: blur(1rem);
 			-webkit-backdrop-filter: blur(1rem);
 			-moz-backdrop-filter: blur(1rem);
