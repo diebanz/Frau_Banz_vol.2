@@ -645,11 +645,11 @@ body {
     .navigation__background {
       height: 6rem;
       width: 6rem;
-      border-radius: 2rem;
+      border-radius: 0.5rem;
       background-image: radial-gradient(transparent, transparent);
-      backdrop-filter: blur(5px);
-      -webkit-backdrop-filter: blur(5px);
-      -moz-backdrop-filter: blur(5px);
+      backdrop-filter: blur(1rem);
+      -webkit-backdrop-filter: blur(1rem);
+      -moz-backdrop-filter: blur(1rem);
       position: fixed;
       top: 1rem;
       left: 1rem;
