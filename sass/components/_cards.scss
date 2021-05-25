@@ -1,176 +1,170 @@
 .card {
-    width: 90%;
-    height: 55rem;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    background: $color-primary-dark;
-    box-shadow: inset 0.6rem 0.6rem 1rem #77a2b0,
-        inset -0.5rem -0.5rem 0.5rem #93d0e2;
-    position: relative;
+	width: 90%;
+	height: 55rem;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	background: $color-primary-dark;
+	box-shadow: inset 0.6rem 0.6rem 1rem #77a2b0,
+		inset -0.5rem -0.5rem 0.5rem #93d0e2;
+	position: relative;
 
-    &__pic {
-        &:before {
-            content: "";
-            width: 80.5%;
-            height: 20.8rem;
-            background-color: rgba($color-white, 0.2);
-            position: absolute;
-            top: 10%;
-            left: 9.5%;
-            z-index: 1;
-            border-radius: 0.5rem;
-        }
+	&__pic {
+		&:before {
+			content: "";
+			width: 80.5%;
+			height: 20.8rem;
+			background-color: rgba($color-white, 0.2);
+			position: absolute;
+			top: 10%;
+			left: 9.5%;
+			z-index: 1;
+			border-radius: 0.5rem;
+		}
 
-        &::after {
-            content: "";
-            width: 60%;
-            height: 10%;
-            position: absolute;
-            top: 23rem;
-            left: 20%;
-            border-radius: 0.5rem;
-            font-size: 2.5rem;
-            background: $color-primary-dark;
-            z-index: 5;
-            border: 1px solid rgba(255, 255, 255, 0.18);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+		&::after {
+			content: "";
+			width: 60%;
+			height: 10%;
+			position: absolute;
+			top: 23rem;
+			left: 20%;
+			border-radius: 0.5rem;
+			font-size: 2.5rem;
+			background: $color-primary-dark;
+			z-index: 5;
+			border: 1px solid rgba(255, 255, 255, 0.18);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
 
-        & img {
-            width: 81%;
-            height: 21rem;
-            position: absolute;
-            top: 10%;
-            left: 9.5%;
-            border-radius: 0.5rem;
-        }
-    }
+		& img {
+			width: 81%;
+			height: 21rem;
+			position: absolute;
+			top: 10%;
+			left: 9.5%;
+			border-radius: 0.5rem;
+		}
+	}
 
-    &__pic1 {
-        &:before {
-            content: "";
-            border: 1px solid $color-tertiary;
-        }
+	&__pic1 {
+		&:before {
+			content: "";
+			border: 1px solid $color-tertiary;
+		}
 
-        &::after {
-            content: "HTML/CSS/SASS";
-            color: $color-tertiary;
-            box-shadow: 0.5rem 0.5rem 0 $color-tertiary;
-        }
-    }
+		&::after {
+			content: "HTML/CSS/SASS";
+			color: $color-tertiary;
+			box-shadow: 0.5rem 0.5rem 0 $color-tertiary;
+		}
+	}
 
-    &__pic2 {
-        &:before {
-            content: "";
-            border: 1px solid $color-secondary;
-        }
+	&__pic2 {
+		&:before {
+			content: "";
+			border: 1px solid $color-secondary;
+		}
 
-        &::after {
-            content: "JavaScript";
-            color: $color-secondary;
-            box-shadow: 0.5rem 0.5rem 0 $color-secondary;
-        }
-    }
+		&::after {
+			content: "JavaScript";
+			color: $color-secondary;
+			box-shadow: 0.5rem 0.5rem 0 $color-secondary;
+		}
+	}
 
-    &__pic3 {
-        &:before {
-            content: "";
-            border: 1px solid $color-primary;
-        }
+	&__pic3 {
+		&:before {
+			content: "";
+			border: 1px solid $color-primary;
+		}
 
-        &::after {
-            content: "Fullstack";
-            color: $color-primary;
-            box-shadow: 0.5rem 0.5rem 0 $color-primary;
-        }
-    }
+		&::after {
+			content: "Fullstack";
+			color: $color-primary;
+			box-shadow: 0.5rem 0.5rem 0 $color-primary;
+		}
+	}
 
-    &__text {
-        width: 87%;
-        height: 90%;
-        padding: 1rem;
-        background-color: $color-primary-light;
-        box-shadow: 0.2rem 0.2rem 0.5rem #5291a9;
+	&__text {
+		width: 87%;
+		height: 90%;
+		padding: 1rem;
+		background-color: $color-primary-light;
+		box-shadow: 0.2rem 0.2rem 0.5rem #5291a9;
 
-        position: absolute;
-        top: 5%;
-        left: 7%;
-        border-radius: 0.5rem;
+		position: absolute;
+		top: 5%;
+		left: 7%;
+		border-radius: 0.5rem;
 
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: center;
-        text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: center;
+		text-align: center;
 
-        & p {
-            color: $color-primary;
-            font-size: 1.5rem;
-            margin-bottom: 3rem;
-        }
-    }
+		& p {
+			color: $color-primary;
+			font-size: 1.5rem;
+			margin-bottom: 3rem;
+		}
+	}
 
-    &__links {
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
+	&__links {
+		display: flex;
+		justify-content: space-around;
+		width: 100%;
 
-        &--1 a {
-            color: $color-tertiary;
-        }
-        &--2 a {
-            color: $color-secondary;
-        }
-        &--3 a {
-            color: $color-primary;
-        }
-    }
+		&--1 a {
+			color: $color-tertiary;
+		}
+		&--2 a {
+			color: $color-secondary;
+		}
+		&--3 a {
+			color: $color-primary;
+		}
+	}
 
-    &__links a {
-        display: block;
-        width: 40%;
-        padding: 1rem;
+	&__links a {
+		display: block;
+		width: 40%;
+		padding: 1rem;
 
-        font-size: 1.8rem;
-        border-radius: 0.5rem;
-        background: linear-gradient(145deg, #b7dce9, #9ab9c4);
-        box-shadow: 2px 2px 2px #87a3ac, -2px -2px 2px #cff9ff;
-        transition: box-shadow 0.8s ease-in-out;
+		font-size: 1.8rem;
+		border-radius: 0.5rem;
+		background: linear-gradient(145deg, #b7dce9, #9ab9c4);
+		box-shadow: 2px 2px 2px #87a3ac, -2px -2px 2px #cff9ff;
+		transition: box-shadow 0.8s ease-in-out;
 
-        &:hover {
-            background: #abceda;
-            box-shadow: inset 2px 2px 2px #87a3ac, inset -2px -2px 2px #cff9ff;
-        }
-    }
-}
-
-@media only screen and (max-width: 992px) {
-    .section__projects {
-        padding: 3rem;
-    }
+		&:hover {
+			background: #abceda;
+			box-shadow: inset 2px 2px 2px #87a3ac, inset -2px -2px 2px #cff9ff;
+		}
+	}
 }
 
 @media only screen and (max-width: 768px) {
-    .card {
-        width: 100%;
-    }
+	.card {
+		width: 100%;
+	}
 }
 
 @media only screen and (max-width: 450px) {
-    &__pic {
-        &::after {
-            font-size: 1.2rem;
-        }
+	&__pic {
+		&::after {
+			font-size: 1.2rem;
+		}
 
-        & img {
-            width: 81%;
-            height: 21rem;
-            position: absolute;
-            top: 10%;
-            left: 9.5%;
-            border-radius: 0.5rem;
-        }
-    }
+		& img {
+			width: 81%;
+			height: 21rem;
+			position: absolute;
+			top: 10%;
+			left: 9.5%;
+			border-radius: 0.5rem;
+		}
+	}
 }

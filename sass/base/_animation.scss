@@ -1,43 +1,48 @@
 @keyframes moveRight {
-    0% {
-        opacity: 0;
-        transform: translateX(-100rem);
-    }
+	0% {
+		opacity: 0;
+		transform: translateX(-100rem);
+	}
 
-    70% {
-        opacity: 1;
-        transform: translateX(10rem);
-    }
+	40% {
+		opacity: 1;
+		transform: translateX(10rem);
+	}
 
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
+	75% {
+		opacity: 1;
+		transform: translateX(-10rem);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
 }
 
 @keyframes moveLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(50rem);
-    }
+	0% {
+		opacity: 0;
+		transform: translateX(50rem);
+	}
 
-    70% {
-        opacity: 1;
-        transform: translateX(-10rem);
-    }
+	70% {
+		opacity: 1;
+		transform: translateX(-10rem);
+	}
 
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
 }
 
 @keyframes backgrCards {
-    0% {
-        background-position: left;
-    }
+	0% {
+		background-position: left;
+	}
 
-    100% {
-        background-position: right;
-    }
+	100% {
+		background-position: right;
+	}
 }

@@ -1,45 +1,45 @@
 .section__contact {
-    background-color: $color-tertiary;
-    box-shadow: 0 1rem $color-tertiary, 0 -1rem $color-tertiary;
-    &--heading {
-        color: $color-primary;
-    }
+	background-color: $color-tertiary;
 
-    &--container {
-        width: 80%;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-    }
+	&--heading {
+		color: $color-primary;
+	}
 
-    &--heading {
-        color: $color-primary;
-    }
+	&--container {
+		width: 80%;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&--heading {
+		color: $color-primary;
+	}
 }
 
 @media only screen and (max-width: 992px) {
-    .section__contact {
-        &--container {
-            width: 90%;
-            padding: 2rem;
-        }
-    }
+	.section__contact {
+		&--container {
+			width: 90%;
+			padding: 2rem;
+		}
+	}
 }
 
 @media only screen and (max-width: 768px) {
-    .section__contact {
-        &--container {
-            width: 100%;
+	.section__contact {
+		&--container {
+			width: 100%;
 
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
 
-        &--heading {
-            color: $color-primary;
-            text-align: center;
-            margin-bottom: 2rem;
-        }
-    }
+		&--heading {
+			color: $color-primary;
+			text-align: center;
+			margin-bottom: 2rem;
+		}
+	}
 }
