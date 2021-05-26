@@ -29,9 +29,6 @@
 @media only screen and (max-width: 768px) {
 	.section__contact {
 		&--container {
-			width: 100%;
-
-			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
 		}
