@@ -1,70 +1,81 @@
 .form {
-    padding: 5rem;
+	padding: 5rem;
+	width: 70%;
+	margin: 0 auto;
 
-    width: 70%;
-    margin: 0 auto;
+	&__name,
+	&__email,
+	&__message,
+	&__btn {
+		width: 100%;
+		margin-bottom: 3rem;
+	}
 
-    &__name,
-    &__email,
-    &__message,
-    &__btn {
-        width: 100%;
-        margin-bottom: 3rem;
-    }
+	&__input {
+		display: block;
+		width: 80%;
+		margin: 0 auto;
+		padding: 1rem;
+		border-radius: 1rem;
+		border: none;
+		background-color: $color-primary-light;
+		color: #333;
+		border-bottom: 2px solid;
 
-    &__input {
-        display: block;
-        width: 80%;
-        margin: 0 auto;
-        padding: 1rem;
-        border-radius: 1rem;
-        border: none;
-        background-color: $color-primary-light;
-        color: #333;
-        border-bottom: 2px solid;
+		&:focus {
+			box-shadow: 0.5rem 0.5rem $color-primary;
+			outline: none;
+		}
 
-        &:focus {
-            box-shadow: 0.5rem 0.5rem $color-primary;
-            outline: none;
-        }
+		&:invalid {
+			border-bottom: 2px solid #c51e1e;
+		}
 
-        &:invalid {
-            border-bottom: 2px solid #c51e1e;
-        }
+		&::placeholder,
+		&::-moz-placeholder {
+			color: $color-primary;
+		}
+	}
 
-        &::placeholder,
-        &::-moz-placeholder {
-            color: $color-primary;
-        }
-    }
+	&__label {
+		display: block;
+		margin-left: 10.5rem;
+		margin-top: 1rem;
+		transition: all 0.3s;
+		color: $color-primary;
+	}
 
-    &__label {
-        display: block;
-        margin-left: 10.5rem;
-        margin-top: 1rem;
-        transition: all 0.3s;
-        color: $color-primary;
-    }
-
-    textarea {
-        resize: none;
-        height: 20rem;
-    }
+	textarea {
+		resize: none;
+		height: 20rem;
+	}
 }
 
 .form__input:placeholder-shown + .form__label {
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-4rem);
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(-4rem);
 }
 
 @media only screen and (max-width: 992px) {
-    .form {
-        padding: 2rem;
-        width: 100%;
-    }
+	.form {
+		padding: 2rem;
+		width: 100%;
+	}
 
-    &__input {
-        display: block;
-    }
+	&__label {
+		margin-left: 7.5rem;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	&__label {
+		margin-left: 7.5rem;
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	&__label {
+		margin-left: 4.3rem;
+	}
 }
