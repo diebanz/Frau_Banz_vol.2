@@ -132,12 +132,13 @@
 		display: block;
 		width: 40%;
 		padding: 1rem;
+		margin-bottom: 1rem;
 
 		font-size: 1.8rem;
 		border-radius: 0.5rem;
 		background: linear-gradient(145deg, #b7dce9, #9ab9c4);
 		box-shadow: 2px 2px 2px #87a3ac, -2px -2px 2px #cff9ff;
-		transition: box-shadow 0.8s ease-in-out;
+		transition: all 0.5s ease-in;
 
 		&:hover {
 			background: #abceda;
