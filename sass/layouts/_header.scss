@@ -164,6 +164,11 @@
 				width: 20rem;
 				height: 20rem;
 			}
+
+			&--text {
+				width: 90%;
+				padding: 3rem 0;
+			}
 		}
 	}
 }
@@ -177,10 +182,6 @@
 
 			&--imgs {
 				width: 80%;
-			}
-
-			&--text {
-				margin-bottom: 2rem;
 			}
 		}
 	}
