@@ -32,7 +32,7 @@
 			font-size: 2.5rem;
 			background: $color-primary-dark;
 			z-index: 5;
-			border: 1px solid rgba(255, 255, 255, 0.18);
+			border: 1px solid #ffffff2e;
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -146,25 +146,27 @@
 	}
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
 	.card {
 		width: 100%;
 	}
 }
 
 @media only screen and (max-width: 450px) {
-	&__pic {
-		&::after {
-			font-size: 1.2rem;
-		}
+	.card {
+		&__pic {
+			&::after {
+				font-size: 1.2rem;
+			}
 
-		& img {
-			width: 81%;
-			height: 21rem;
-			position: absolute;
-			top: 10%;
-			left: 9.5%;
-			border-radius: 0.5rem;
+			& img {
+				width: 81%;
+				height: 21rem;
+				position: absolute;
+				top: 10%;
+				left: 9.5%;
+				border-radius: 0.5rem;
+			}
 		}
 	}
 }

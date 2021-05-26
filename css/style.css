@@ -119,7 +119,7 @@ body {
   font-size: 2rem;
   background: #0b5351;
   box-shadow: 0.5rem 0.5rem #001242;
-  transition: 0.1s; }
+  transition: all 0.5s; }
   .form__button:hover {
     box-shadow: inset 0.2rem 0.2rem 0.3rem #bcd0c7, inset -0.2rem -0.2rem 0.3rem #01302e;
     transform: translate(1px, 1px); }
@@ -211,7 +211,7 @@ body {
     font-size: 2.5rem;
     background: #8cbecf;
     z-index: 5;
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    border: 1px solid #ffffff2e;
     display: flex;
     justify-content: center;
     align-items: center; }
@@ -285,14 +285,14 @@ body {
       background: #abceda;
       box-shadow: inset 2px 2px 2px #87a3ac, inset -2px -2px 2px #cff9ff; }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   .card {
     width: 100%; } }
 
 @media only screen and (max-width: 450px) {
-  __pic::after {
+  .card__pic::after {
     font-size: 1.2rem; }
-  __pic img {
+  .card__pic img {
     width: 81%;
     height: 21rem;
     position: absolute;
@@ -745,13 +745,18 @@ body {
   background-color: #8cbecf;
   box-shadow: 5px 0 0 #abceda; }
   .section__projects--container {
-    padding: 5rem 0;
+    padding: 5rem 2rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    gap: 2rem;
     justify-items: center; }
   .section__projects--heading {
     margin: 3rem 0;
     color: #001242;
     text-align: center;
     text-transform: uppercase; }
+
+@media only screen and (max-width: 992px) {
+  .section__projects--container {
+    padding: 5rem 1rem;
+    gap: 1rem; } }

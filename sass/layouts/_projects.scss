@@ -3,10 +3,10 @@
 	box-shadow: 5px 0 0 $color-primary-light;
 
 	&--container {
-		padding: 5rem 0;
+		padding: 5rem 2rem;
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-		gap: 5rem;
+		grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+		gap: 2rem;
 		justify-items: center;
 	}
 
@@ -15,5 +15,14 @@
 		color: $color-primary;
 		text-align: center;
 		text-transform: uppercase;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.section__projects {
+		&--container {
+			padding: 5rem 1rem;
+			gap: 1rem;
+		}
 	}
 }
