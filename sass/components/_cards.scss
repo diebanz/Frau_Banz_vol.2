@@ -147,30 +147,26 @@
 }
 
 @media only screen and (max-width: 992px) {
-    .section__projects {
-        padding: 3rem;
-    }
-}
-
-@media only screen and (max-width: 768px) {
     .card {
         width: 100%;
     }
 }
 
 @media only screen and (max-width: 450px) {
-    &__pic {
-        &::after {
-            font-size: 1.2rem;
-        }
+    .card {
+        &__pic {
+            &::after {
+                font-size: 1.2rem;
+            }
 
-        & img {
-            width: 81%;
-            height: 21rem;
-            position: absolute;
-            top: 10%;
-            left: 9.5%;
-            border-radius: 0.5rem;
+            & img {
+                width: 81%;
+                height: 21rem;
+                position: absolute;
+                top: 10%;
+                left: 9.5%;
+                border-radius: 0.5rem;
+            }
         }
     }
 }

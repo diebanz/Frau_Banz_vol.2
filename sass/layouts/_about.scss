@@ -1,101 +1,104 @@
+#about {
+	background-color: $color-secondary;
+	box-shadow: 5px 0 0 $color-primary-light;
+}
+
 .section__about {
-    background-color: $color-secondary;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 1rem $color-secondary, 0 -1rem $color-secondary;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
-    &--text,
-    &--skills {
-        width: 40%;
-        padding: 0 2rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+	&--text,
+	&--skills {
+		width: 40%;
+		padding: 0 2rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
 
-    &--heading {
-        text-align: center;
-        color: $color-secondary-light;
-        margin-bottom: 5rem;
-    }
+	&--heading {
+		text-align: center;
+		color: $color-secondary-light;
+		margin-bottom: 5rem;
+	}
 
-    &--icons {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: flex-start;
-    }
+	&--icons {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: flex-start;
+	}
 
-    &--text {
-        p {
-            text-indent: 5rem;
-            margin: 1rem 0;
-        }
-    }
+	&--text {
+		p {
+			text-indent: 5rem;
+			margin: 1rem 0;
+		}
+	}
 }
 
 .about__span {
-    &--pink {
-        color: $color-tertiary-light;
-    }
+	&--pink {
+		color: $color-tertiary-light;
+	}
 }
 
 .section__about--icons ion-icon,
 .section__about--icons i {
-    font-size: 10rem;
-    margin: 3rem;
-    padding: 1.5rem;
-    border-radius: 1rem;
-    color: $color-tertiary-light;
-    box-shadow: inset 0.6rem 0.6rem 0.3rem rgba($color-secondary-dark, 0.5),
-        inset -0.2rem -0.2rem 0.3rem rgba($color-secondary-light, 0.5);
+	font-size: 10rem;
+	margin: 3rem;
+	padding: 1.5rem;
+	border-radius: 1rem;
+	color: $color-tertiary-light;
+	box-shadow: inset 0.6rem 0.6rem 0.3rem rgba($color-secondary-dark, 0.5),
+		inset -0.2rem -0.2rem 0.3rem rgba($color-secondary-light, 0.5);
 }
 
 @media only screen and (max-width: 992px) {
-    .section__about {
-        &--text,
-        &--skills {
-            width: 50%;
-        }
+	.section__about {
+		&--text,
+		&--skills {
+			width: 50%;
+		}
 
-        &--heading {
-            margin-bottom: 3rem;
-        }
-    }
+		&--heading {
+			margin-bottom: 3rem;
+		}
+	}
 
-    .section__about--icons ion-icon,
-    .section__about--icons i {
-        font-size: 10rem;
-        margin: 3rem;
-    }
+	.section__about--icons ion-icon,
+	.section__about--icons i {
+		font-size: 10rem;
+		margin: 3rem;
+	}
 }
 
 @media only screen and (max-width: 768px) {
-    .section__about {
-        padding: 2rem 0;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 0 1rem $color-secondary, 0 -1rem $color-secondary;
+	.section__about {
+		padding: 2rem 0;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		box-shadow: 0 1rem $color-secondary, 0 -1rem $color-secondary;
 
-        &--text,
-        &--skills {
-            width: 90%;
-        }
-    }
+		&--text,
+		&--skills {
+			width: 90%;
+		}
+	}
 
-    .section__about--icons ion-icon,
-    .section__about--icons i {
-        font-size: 10rem;
-    }
+	.section__about--icons ion-icon,
+	.section__about--icons i {
+		font-size: 10rem;
+	}
 }
 
 @media only screen and (max-width: 576px) {
-    .section__about--icons ion-icon,
-    .section__about--icons i {
-        font-size: 8rem;
-        margin: 1rem;
-    }
+	.section__about--icons ion-icon,
+	.section__about--icons i {
+		font-size: 8rem;
+		margin: 1rem;
+	}
 }

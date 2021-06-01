@@ -1,182 +1,188 @@
 .header {
-    background-color: $color-primary;
-    display: flex;
-    flex-direction: column;
-    margin-top: 5.5rem;
-    padding: 5rem 0;
-    box-shadow: 0 1rem $color-primary;
+	background-color: $color-primary;
+	display: flex;
+	flex-direction: column;
+	margin-top: 5.5rem;
+	padding-top: 5rem;
+	box-shadow: 5px 0 0 $color-primary-light;
 
-    &__hero {
-        width: 90%;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
+	&__hero {
+		width: 90%;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
 
-        &--imgs {
-            width: 40%;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            justify-content: space-between;
+		&--imgs {
+			width: 40%;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			justify-content: space-between;
 
-            filter: drop-shadow(-8.5rem 2.9rem 0.7rem rgba(203, 118, 158, 0.11))
-                drop-shadow(-6.2rem 1.7rem 0.38rem rgba(203, 118, 158, 0.07))
-                drop-shadow(-4.1rem 1.1rem 0.3rem rgba(203, 118, 158, 0.06))
-                drop-shadow(-1.9rem 0px 0.2rem rgba(203, 118, 158, 0.05));
-        }
+			filter: drop-shadow(-8.5rem 2.9rem 0.7rem #cb769e1c)
+				drop-shadow(-6.2rem 1.7rem 0.38rem #cb769e12)
+				drop-shadow(-4.1rem 1.1rem 0.3rem #cb769e0f)
+				drop-shadow(-1.9rem 0px 0.2rem #cb769e0d);
+		}
 
-        &--pic {
-            width: 25rem;
-            height: 25rem;
-            background-image: linear-gradient(
-                    180deg,
-                    rgba($color-tertiary, 0.2),
-                    rgba($color-primary, 0.2)
-                ),
-                url("../../IMG/autormobile.jpg");
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-            border-radius: 2rem;
-            border: 0.5rem solid $color-tertiary;
-            animation: moveRight 1.5s 0.2s ease-out both;
-        }
+		&--pic {
+			width: 25rem;
+			height: 25rem;
+			background-image: linear-gradient(
+					180deg,
+					rgba($color-tertiary, 0.2),
+					rgba($color-primary, 0.2)
+				),
+				url("../../IMG/autormobile.jpg");
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			border-radius: 2rem;
+			border: 0.5rem solid $color-tertiary;
+			animation: moveRight 1.5s 0.2s ease-out both;
+		}
 
-        &--icon {
-            margin: 5rem;
-            width: 15rem;
-            height: 10rem;
-            border-radius: 0.5rem;
-            border: 2px solid transparent;
+		&--icon {
+			margin: 5rem;
+			width: 15rem;
+			height: 10rem;
+			border-radius: 0.5rem;
+			border: 2px solid transparent;
 
-            &:hover {
-                box-shadow: inset 5px 5px 5px #1b294b,
-                    inset -2px -2px 5px #4b5672;
-            }
-        }
+			&:hover {
+				box-shadow: inset 5px 5px 5px #1b294b,
+					inset -2px -2px 5px #4b5672;
+			}
+		}
 
-        &--github {
-            color: $color-primary;
-            background-color: $color-tertiary;
-            animation: moveRight 1s 0.5s ease-out both;
-        }
+		&--github {
+			color: $color-primary;
+			background-color: $color-tertiary;
+			animation: moveRight 1s 0.5s ease-out both;
+		}
 
-        &--resume {
-            color: $color-primary;
-            background-color: $color-primary-light;
-            animation: moveRight 1.5s 0.5s ease-out both;
-        }
+		&--resume {
+			color: $color-primary;
+			background-color: $color-primary-light;
+			animation: moveRight 1.5s 0.5s ease-out both;
+		}
 
-        &--text {
-            width: 45%;
-            color: $color-secondary-light;
-            padding-right: 2rem;
-            // animation: moveLeft 1.5s 1 3s ease-out both;
-        }
+		&--text {
+			width: 45%;
+			color: $color-secondary-light;
+			padding-right: 2rem;
+			// animation: moveLeft 1.5s 1 3s ease-out both;
+		}
 
-        &--part2 {
-            text-align: center;
-        }
-        &--part3 {
-            text-align: right;
-        }
-        &--part4 {
-            text-align: right;
-        }
-    }
+		&--part2 {
+			text-align: center;
+		}
+		&--part3 {
+			text-align: right;
+		}
+		&--part4 {
+			text-align: right;
+		}
+	}
 
-    &__span {
-        &--pink {
-            color: $color-tertiary;
-        }
+	&__span {
+		&--pink {
+			color: $color-tertiary;
+		}
 
-        &--blue {
-            color: $color-tertiary-light;
-        }
-    }
+		&--blue {
+			color: $color-tertiary-light;
+		}
+	}
 }
 
 @media only screen and (max-width: 992px) {
-    .header__hero {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+	.header__hero {
+		width: 100%;
+		justify-content: center;
+		align-items: center;
 
-        &--imgs {
-            width: 40%;
-            align-items: center;
-        }
+		&--imgs {
+			width: 40%;
+			align-items: center;
+		}
 
-        &--text {
-            width: 60%;
-            padding-right: 4rem;
-        }
-    }
+		&--text {
+			width: 60%;
+			padding-right: 4rem;
+		}
+	}
 }
 
 @media only screen and (max-width: 768px) {
-    .header {
-        padding: 10rem 0;
+	.header {
+		padding-top: 5rem;
 
-        &__hero {
-            width: 90%;
-            flex-direction: column;
+		&__hero {
+			margin: 0 auto;
+			width: 90%;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
 
-            &--imgs {
-                width: 100%;
-                margin-bottom: 10rem;
-                align-items: center;
-                justify-content: center;
-            }
+			&--imgs {
+				width: 100%;
+				margin-bottom: 10rem;
+			}
 
-            &--pic {
-                width: 24rem;
-                height: 24rem;
-            }
+			&--pic {
+				width: 24rem;
+				height: 24rem;
+			}
 
-            &--icon {
-                width: 15rem;
-                height: 10rem;
-            }
+			&--icon {
+				width: 15rem;
+				height: 10rem;
+			}
 
-            &--text {
-                width: 90%;
-                padding-right: 1rem;
-            }
-        }
-    }
+			&--text {
+				width: 90%;
+				padding-right: 1rem;
+			}
+		}
+	}
 }
 
 @media only screen and (max-width: 576px) {
-    .header {
-        margin-top: 0;
+	.header {
+		margin-top: 0;
 
-        &__hero {
-            width: 100%;
+		&__hero {
+			width: 100%;
 
-            &--imgs {
-                width: 80%;
-            }
+			&--imgs {
+				width: 80%;
+				margin-bottom: 5rem;
+			}
 
-            &--pic {
-                width: 20rem;
-                height: 20rem;
-            }
-        }
-    }
+			&--pic {
+				width: 20rem;
+				height: 20rem;
+			}
+
+			&--text {
+				width: 90%;
+				padding: 3rem 0;
+			}
+		}
+	}
 }
 
 @media only screen and (max-width: 450px) {
-    .header {
-        margin-top: 0;
+	.header {
+		margin-top: 0;
 
-        &__hero {
-            width: 100%;
+		&__hero {
+			width: 100%;
 
-            &--imgs {
-                width: 80%;
-            }
-        }
-    }
+			&--imgs {
+				width: 80%;
+			}
+		}
+	}
 }
