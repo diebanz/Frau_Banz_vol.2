@@ -168,7 +168,7 @@ body {
     display: block; } }
 
 .card {
-  width: 90%;
+  width: 80%;
   height: 55rem;
   padding: 1rem;
   border-radius: 0.5rem;
@@ -729,7 +729,7 @@ body {
   box-shadow: 0 1rem #8cbecf, 0 -1rem #8cbecf; }
   .section__projects--container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
     gap: 5rem;
     justify-items: center; }
   .section__projects--heading {
