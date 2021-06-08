@@ -293,8 +293,6 @@ body {
     width: 100%; } }
 
 @media only screen and (max-width: 450px) {
-  .card__pic::after {
-    font-size: 1.2rem; }
   .card__pic img {
     width: 81%;
     height: 21rem;
