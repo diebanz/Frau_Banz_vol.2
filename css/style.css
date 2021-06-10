@@ -60,6 +60,7 @@ html {
   scroll-behavior: smooth; }
 
 body {
+  width: 100%;
   font-size: 1.8rem;
   font-family: "Poppins", sans-serif;
   background-color: #abceda;
@@ -657,6 +658,7 @@ body {
   .navi {
     display: none; }
   .navigation {
+    position: relative;
     display: block;
     width: 100%; }
     .navigation__checkbox {
@@ -677,7 +679,7 @@ body {
       height: 30vh;
       position: fixed;
       top: 0;
-      right: 1rem;
+      right: 0;
       z-index: 15;
       opacity: 0;
       width: 0;
