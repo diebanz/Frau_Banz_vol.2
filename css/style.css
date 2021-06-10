@@ -765,5 +765,6 @@ body {
 
 @media only screen and (max-width: 992px) {
   .section__projects--container {
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
     padding: 5rem 1rem;
     gap: 1rem; } }
