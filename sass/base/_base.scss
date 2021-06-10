@@ -9,6 +9,7 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -19,5 +20,16 @@ body {
     line-height: 1.5;
     color: #ccc;
     overflow-x: hidden;
-    position: relative;
+}
+
+@media only screen and (max-width: 992px) {
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 576px) {
+}
+
+@media only screen and (max-width: 450px) {
 }
