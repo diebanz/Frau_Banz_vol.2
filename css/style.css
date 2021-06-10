@@ -506,20 +506,19 @@ body {
       border: 0.5rem solid #cb769e;
       animation: moveRight 1.5s 0.2s ease-out both; }
     .header__hero--icon {
+      background: linear-gradient(145deg, #071d5a, #041952);
+      color: #cb769e;
       margin: 5rem;
       width: 15rem;
       height: 10rem;
       border-radius: 0.5rem;
-      border: 2px solid transparent; }
+      box-shadow: 2px 2px 2px #000c2a, -2px -2px 2px #00185a; }
       .header__hero--icon:hover {
-        box-shadow: inset 5px 5px 5px #1b294b, inset -2px -2px 5px #4b5672; }
+        background: #001242;
+        box-shadow: inset 2px 2px 2px #000c2a, inset -2px -2px 2px #00185a; }
     .header__hero--github {
-      color: #001242;
-      background-color: #cb769e;
       animation: moveRight 1s 0.5s ease-out both; }
     .header__hero--resume {
-      color: #001242;
-      background-color: #abceda;
       animation: moveRight 1.5s 0.5s ease-out both; }
     .header__hero--text {
       width: 45%;
