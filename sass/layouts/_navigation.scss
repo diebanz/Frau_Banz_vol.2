@@ -112,7 +112,7 @@
     .navigation {
         display: block;
         width: 100%;
-        position: relative;
+        background-color: $color-nav;
 
         &__checkbox {
             display: none;
@@ -120,16 +120,17 @@
 
         &__button {
             background-color: transparent;
+            display: block;
             height: 6.5rem;
             width: 6.5rem;
-            position: fixed;
-            top: 0.5rem;
-            right: 1rem;
             border-radius: 0.5rem;
             z-index: 20;
-            box-shadow: inset 5px 5px 5px #282e3b, inset -2px -2px 5px #7c87a1;
+            box-shadow: inset 2px 2px 2px #282e3b, inset -2px -2px 2px #7c87a1;
             text-align: center;
             cursor: pointer;
+            position: fixed;
+            top: 1rem;
+            left: 1rem;
         }
 
         // &__background {
@@ -166,10 +167,10 @@
         }
 
         &__list {
-            // position: absolute;
-            // top: 50%;
-            // left: 50%;
-            // transform: translate(-50%, -50%);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             list-style: none;
             text-align: center;
         }
@@ -216,7 +217,7 @@
 
         &__checkbox:checked ~ &__button {
             background-color: transparent;
-            box-shadow: inset 5px 5px 5px #6d5a62, inset -2px -2px 5px #eecbdb;
+            box-shadow: inset 2px 2px 2px #6d5a62, inset -2px -2px 2px #eecbdb;
         }
 
         // HAMBURGER

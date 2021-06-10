@@ -12,13 +12,13 @@ html {
 }
 
 body {
-    width: 100%;
     font-size: 1.8rem;
     font-family: $second-font, sans-serif;
     background-color: $color-primary-light;
     line-height: 1.5;
     color: #ccc;
     overflow-x: hidden;
+    position: relative;
 }
 
 .top__wave,
