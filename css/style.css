@@ -676,14 +676,12 @@ body {
       top: 1rem;
       left: 1rem; }
     .navigation__nav {
-      width: 90%;
       height: 30vh;
       position: fixed;
-      top: 1rem;
-      left: 1rem;
+      top: 0;
+      left: 0;
       z-index: 15;
       opacity: 0;
-      width: 0;
       background-image: linear-gradient(145deg, #cb769e, #ffa6d0, #abceda);
       transition: all 0.8s cubic-bezier(0.68, 0.55, 0.265, 1.55); }
     .navigation__list {
@@ -713,7 +711,7 @@ body {
       transform: translateX(1rem); }
     .navigation__checkbox:checked ~ .navigation__nav {
       opacity: 1;
-      width: 95%; }
+      width: 80%; }
     .navigation__checkbox:checked ~ .navigation__button {
       background-color: transparent;
       box-shadow: inset 2px 2px 2px #6d5a62, inset -2px -2px 2px #eecbdb; }
