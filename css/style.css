@@ -657,7 +657,8 @@ body {
   .navi {
     display: none; }
   .navigation {
-    display: block; }
+    display: block;
+    width: 100%; }
     .navigation__checkbox {
       display: none; }
     .navigation__button {
@@ -676,7 +677,7 @@ body {
       height: 30vh;
       position: fixed;
       top: 0;
-      right: 0;
+      right: 1rem;
       z-index: 15;
       opacity: 0;
       width: 0;
