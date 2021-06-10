@@ -10,16 +10,16 @@
 }
 
 .form__button {
-    color: $color-secondary-light;
+    color: $color-primary;
     margin: 0 auto;
     width: 20rem;
     height: 7rem;
-    background: #0b5351;
-    box-shadow: 0.5rem 0.5rem #001242;
+    background: linear-gradient(145deg, #d97ea9, #b76a8e);
+    box-shadow: 2px 2px 2px #8c516d, -2px -2px 2px #ff9bcf;
 
     &:hover {
-        box-shadow: inset 0.2rem 0.2rem 0.3rem $color-secondary-light,
-            inset -0.2rem -0.2rem 0.3rem $color-secondary-dark;
+        background: $color-tertiary-light;
+        box-shadow: inset 2px 2px 2px #8c516d, inset -2px -2px 2px #ff9bcf;
     }
 }
 
