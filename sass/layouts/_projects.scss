@@ -1,6 +1,13 @@
 .section__projects {
+    width: 100%;
     background-color: $color-primary-dark;
     box-shadow: 5px 0 0 $color-primary-light;
+    background-image: url(./../../IMG/wave__down.svg),
+        url(./../../IMG/wave__up.svg);
+    background-position: top, bottom;
+    background-size: contain, contain;
+    background-repeat: no-repeat, no-repeat;
+    padding: 20rem 0;
 
     &--container {
         display: grid;
@@ -25,9 +32,12 @@
 
 @media only screen and (max-width: 992px) {
     .section__projects {
+        padding: 10rem 0;
+
         &--container {
             grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
             padding: 5rem 1rem;
+
             gap: 1rem;
         }
     }

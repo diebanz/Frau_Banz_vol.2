@@ -60,6 +60,7 @@ html {
   scroll-behavior: smooth; }
 
 body {
+  width: 100%;
   font-size: 1.8rem;
   font-family: "Poppins", sans-serif;
   background-color: #abceda;
@@ -67,15 +68,6 @@ body {
   color: #ccc;
   overflow-x: hidden;
   position: relative; }
-
-.top__wave,
-.down__wave {
-  display: block;
-  width: 100%;
-  height: 100%; }
-
-.down__wave {
-  box-shadow: 5px 0 0 #abceda; }
 
 .heading {
   font-family: "Spartan"; }
@@ -313,7 +305,12 @@ body {
 
 #about {
   background-color: #0b5351;
-  box-shadow: 5px 0 0 #abceda; }
+  box-shadow: 5px 0 0 #abceda;
+  background-image: url(./../../IMG/wave__down.svg), url(./../../IMG/wave__up.svg);
+  background-position: top, bottom;
+  background-size: contain, contain;
+  background-repeat: no-repeat, no-repeat;
+  padding: 20rem 0; }
 
 .section__about {
   display: flex;
@@ -352,6 +349,8 @@ body {
   box-shadow: inset 0.6rem 0.6rem 0.3rem rgba(1, 48, 46, 0.5), inset -0.2rem -0.2rem 0.3rem rgba(188, 208, 199, 0.5); }
 
 @media only screen and (max-width: 992px) {
+  #about {
+    padding: 10rem 0; }
   .section__about--text, .section__about--skills {
     width: 50%; }
   .section__about--heading {
@@ -381,7 +380,12 @@ body {
     margin: 1rem; } }
 
 .section__contact {
-  background-color: #cb769e; }
+  background-color: #cb769e;
+  background-image: url(./../../IMG/wave__down.svg), url(./../../IMG/wave__footer.svg);
+  background-position: top, bottom;
+  background-size: contain, contain;
+  background-repeat: no-repeat, no-repeat;
+  padding: 20rem 0; }
   .section__contact--heading {
     color: #001242; }
   .section__contact--container {
@@ -393,9 +397,11 @@ body {
     color: #001242; }
 
 @media only screen and (max-width: 992px) {
-  .section__contact--container {
-    width: 90%;
-    padding: 2rem; } }
+  .section__contact {
+    padding: 10rem 0; }
+    .section__contact--container {
+      width: 90%;
+      padding: 2rem; } }
 
 @media only screen and (max-width: 768px) {
   .section__contact--container {
@@ -465,17 +471,23 @@ body {
     font-size: 4rem; } }
 
 .header {
+  width: 100%;
   background-color: #001242;
+  background-image: url(./../../IMG/wave__up.svg);
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   margin-top: 5.5rem;
-  padding-top: 5rem;
+  padding: 5rem 0;
   box-shadow: 5px 0 0 #abceda; }
   .header__hero {
     width: 90%;
     display: flex;
     justify-content: space-evenly;
-    align-items: center; }
+    align-items: center;
+    padding: 5rem 0; }
     .header__hero--imgs {
       width: 40%;
       display: flex;
@@ -537,26 +549,24 @@ body {
       padding-right: 4rem; } }
 
 @media only screen and (max-width: 768px) {
-  .header {
-    padding-top: 5rem; }
-    .header__hero {
-      margin: 0 auto;
+  .header__hero {
+    margin: 0 auto;
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .header__hero--imgs {
+      width: 100%;
+      margin-bottom: 10rem; }
+    .header__hero--pic {
+      width: 24rem;
+      height: 24rem; }
+    .header__hero--icon {
+      width: 15rem;
+      height: 10rem; }
+    .header__hero--text {
       width: 90%;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center; }
-      .header__hero--imgs {
-        width: 100%;
-        margin-bottom: 10rem; }
-      .header__hero--pic {
-        width: 24rem;
-        height: 24rem; }
-      .header__hero--icon {
-        width: 15rem;
-        height: 10rem; }
-      .header__hero--text {
-        width: 90%;
-        padding-right: 1rem; } }
+      padding-right: 1rem; } }
 
 @media only screen and (max-width: 576px) {
   .header {
@@ -746,8 +756,14 @@ body {
       transform: rotate(-135deg); } }
 
 .section__projects {
+  width: 100%;
   background-color: #8cbecf;
-  box-shadow: 5px 0 0 #abceda; }
+  box-shadow: 5px 0 0 #abceda;
+  background-image: url(./../../IMG/wave__down.svg), url(./../../IMG/wave__up.svg);
+  background-position: top, bottom;
+  background-size: contain, contain;
+  background-repeat: no-repeat, no-repeat;
+  padding: 20rem 0; }
   .section__projects--container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
@@ -764,7 +780,9 @@ body {
     justify-content: center; }
 
 @media only screen and (max-width: 992px) {
-  .section__projects--container {
-    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
-    padding: 5rem 1rem;
-    gap: 1rem; } }
+  .section__projects {
+    padding: 10rem 0; }
+    .section__projects--container {
+      grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+      padding: 5rem 1rem;
+      gap: 1rem; } }

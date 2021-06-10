@@ -12,6 +12,7 @@ html {
 }
 
 body {
+    width: 100%;
     font-size: 1.8rem;
     font-family: $second-font, sans-serif;
     background-color: $color-primary-light;
@@ -19,15 +20,4 @@ body {
     color: #ccc;
     overflow-x: hidden;
     position: relative;
-}
-
-.top__wave,
-.down__wave {
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-
-.down__wave {
-    box-shadow: 5px 0 0 $color-primary-light;
 }
