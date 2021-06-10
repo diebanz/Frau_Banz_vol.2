@@ -149,10 +149,11 @@
         // }
 
         &__nav {
+            width: 90%;
             height: 30vh;
             position: fixed;
-            top: 0;
-            right: 0;
+            top: 1rem;
+            left: 1rem;
             z-index: 15;
             opacity: 0;
             width: 0;
@@ -212,7 +213,7 @@
         // }
         &__checkbox:checked ~ &__nav {
             opacity: 1;
-            width: 100%;
+            width: 95%;
         }
 
         &__checkbox:checked ~ &__button {
