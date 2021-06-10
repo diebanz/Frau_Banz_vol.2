@@ -211,7 +211,7 @@
         // }
         &__checkbox:checked ~ &__nav {
             opacity: 1;
-            width: 80%;
+            width: 100%;
         }
 
         &__checkbox:checked ~ &__button {

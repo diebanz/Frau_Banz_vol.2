@@ -711,7 +711,7 @@ body {
       transform: translateX(1rem); }
     .navigation__checkbox:checked ~ .navigation__nav {
       opacity: 1;
-      width: 80%; }
+      width: 100%; }
     .navigation__checkbox:checked ~ .navigation__button {
       background-color: transparent;
       box-shadow: inset 2px 2px 2px #6d5a62, inset -2px -2px 2px #eecbdb; }
