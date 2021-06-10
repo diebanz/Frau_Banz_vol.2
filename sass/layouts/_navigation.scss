@@ -259,15 +259,3 @@
         }
     }
 }
-
-@media only screen and (max-width: 450px) {
-    .navigation {
-        display: block;
-        width: 90%;
-        position: relative;
-
-        &__nav {
-            width: 90%;
-        }
-    }
-}
