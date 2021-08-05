@@ -21,7 +21,14 @@
             crossorigin="anonymous"
         />
         <meta name="robots" content="index/follow" />
-
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule=""
+            src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"
+        ></script>
         <link rel="stylesheet" href="css/normalizer.css" />
         <link rel="stylesheet" href="./css/style.css" />
         <link
@@ -66,7 +73,7 @@
                 <a href="#about" class="navi__logo">Aps on a Mission</a>
                 <ul class="navi__list">
                     <li class="navi__list--item navi__list--item1">
-                        <a href="#" class="navi__list--link">home</a>
+                        <a href="#home" class="navi__list--link">home</a>
                     </li>
                     <li class="navi__list--item navi__list--item1">
                         <a href="#about" class="navi__list--link">about</a>
@@ -81,7 +88,7 @@
                     </li>
                 </ul>
             </nav>
-            <div class="header__hero">
+            <div class="header__hero" id="home">
                 <div class="header__hero--imgs">
                     <a
                         href="https://github.com/nataliabanz"
@@ -382,7 +389,6 @@
                 | 2021
             </h3>
         </footer>
-
-        <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+        <script src="scroll.js"></script>
     </body>
 </html>
