@@ -4,6 +4,7 @@
 - HTML
 - CSS
 - SASS
+- JavaScript
 
 ### MY GOALS
 * ✔️ responsive webdesign
